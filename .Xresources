@@ -32,11 +32,3 @@
 ! Whites
 *color7: #C3BAC6
 *color15: #D9E0EE
-
-Xft.autohint: 0
-Xft.antialias: 1
-Xft.hinting: true
-Xft.hintstyle: hintslight
-Xft.dpi: 96
-Xft.rgba: bgr
-Xft.lcdfilter: lcddefault

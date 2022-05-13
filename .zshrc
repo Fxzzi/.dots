@@ -1,12 +1,9 @@
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec xinit -- vt1 > ~/.local/share/xorg/Xorg.log 2>&1
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.config/oh-my-zsh"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -109,9 +106,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:~/.local/bin:~/.scripts
-source $HOME/.aliases
-$HOME/.scripts/fetch.sh
+export PATH=$PATH:~/.local/scripts
+source $HOME/.config/zsh/.aliases
+$HOME/.local/scripts/fetch.sh
 
 function untar(){ while [ ${#} != 0 ]; do if [ -f "${1}" ]; then case "${1}" in
     *.tar.xz); tar xfv "${1}";shift;;

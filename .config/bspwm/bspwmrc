@@ -1,11 +1,11 @@
 #! /bin/sh
 pgrep -x sxhkd > /dev/null || sxhkd & 
 
+picom -b --experimental-backends &
 imwheel -k -b 45 &
 nitrogen --restore &
-picom -b --experimental-backends &
 for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done &
-nvidia-settings --load-config-only &
+nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings --load-config-only &
 $HOME/.config/polybar/launch.sh &
 xset r rate 275 45 &
 
@@ -27,6 +27,6 @@ bspc config gapless_monocle      false
 [ "$1" = 0 ] && {
 	discord-canary --start-minimized --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy &
 	/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
-	$HOME/.scripts/xidlehook.sh &
-	/usr/bin/openrgb -c 0000ff &
+	$HOME/.local/scripts/xidlehook.sh &
+	/usr/bin/openrgb -p blue.orp &
 }

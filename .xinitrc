@@ -1,11 +1,8 @@
 #!/bin/sh
-
-# see https://wiki.archlinux.org/title/GNOME/Keyring#xinitrc
-
 eval $(/usr/bin/gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
 
-userresources=$HOME/.Xresources
+userresources=$HOME/.config/X11/xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap

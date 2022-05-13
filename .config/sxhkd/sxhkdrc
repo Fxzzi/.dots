@@ -1,14 +1,14 @@
 Print
-	$HOME/.scripts/screenshot.sh --monitor1
+	$HOME/.local/scripts/screenshot.sh --monitor1
 
 super + Print
-	$HOME/.scripts/screenshot.sh --active
+	$HOME/.local/scripts/screenshot.sh --active
 
 shift + Print
-	$HOME/.scripts/screenshot.sh --selection
+	$HOME/.local/scripts/screenshot.sh --selection
 	
 ctrl + Print
-	$HOME/.scripts/screenshot.sh --monitor2
+	$HOME/.local/scripts/screenshot.sh --monitor2
 
 # terminal emulator
 super + t
