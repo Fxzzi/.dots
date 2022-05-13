@@ -29,10 +29,10 @@ $reboot)
   systemctl reboot
   ;;
 $lock)
-  ~/.scripts/lock.sh
+  ~/.local/scripts/lock.sh
   ;;
 $suspend)
-  ~/.scripts/lock.sh
+  ~/.local/scripts/lock.sh
   systemctl suspend
   ;;
 $logout)

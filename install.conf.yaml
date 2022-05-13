@@ -19,12 +19,10 @@
     ~/.config/rofi: .config/rofi
     ~/.config/sxhkd: .config/sxhkd
     ~/.config/Thunar: .config/Thunar
-    ~/.scripts: .scripts
+    ~/.config/zsh: .config/zsh
+    ~/.local/scripts: scripts
     ~/.fonts: .fonts
-    ~/.aliases: .aliases
-    ~/.zshrc: .zshrc
-    ~/.Xresources: .Xresources
+    ~/.config/X11: .config/X11
     ~/.imwheelrc: .imwheelrc
-    ~/.xinitrc: .xinitrc
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
