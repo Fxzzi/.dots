@@ -20,9 +20,9 @@
     ~/.config/sxhkd: .config/sxhkd
     ~/.config/Thunar: .config/Thunar
     ~/.config/zsh: .config/zsh
+    ~/.config/X11: .config/X11
     ~/.local/scripts: scripts
     ~/.local/share/fonts: fonts
-    ~/.config/X11: .config/X11
     ~/.imwheelrc: .imwheelrc
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
