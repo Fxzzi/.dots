@@ -22,7 +22,7 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-HYPHEN_INSENSITIVE="true"
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -109,19 +109,3 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:~/.local/scripts
 source $HOME/.config/zsh/.aliases
 $HOME/.local/scripts/fetch.sh
-
-function untar(){ while [ ${#} != 0 ]; do if [ -f "${1}" ]; then case "${1}" in
-    *.tar.xz); tar xfv "${1}";shift;;
-    *.tar.bz2); tar xjvf "${1}";shift;;
-    *.tar.gz); tar xzvf "${1}";shift;;
-    *.bz2); bunzip2 "${1}";shift;;
-    *.rar); rar x "${1}";shift;;
-    *.gz); gunzip "${1}";shift;;
-    *.tar); tar xf "${1}";shift;;
-    *.tbz2); tar xjvf "${1}";shift;;
-    *.tgz); tar xzvf "${1}";shift;;
-    *.zip); unzip "${1}";shift;;
-    *.Z); uncompress "${1}";shift;;
-    *.7z); 7z x "${1}";shift;;
-    *) echo "$1 cannot be extracted via extract-file"; shift
-esac; else; echo "$1 is not a valid file"; shift; fi; done}

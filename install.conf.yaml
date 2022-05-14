@@ -21,7 +21,7 @@
     ~/.config/Thunar: .config/Thunar
     ~/.config/zsh: .config/zsh
     ~/.local/scripts: scripts
-    ~/.fonts: .fonts
+    ~/.local/share/fonts: fonts
     ~/.config/X11: .config/X11
     ~/.imwheelrc: .imwheelrc
 - shell:
