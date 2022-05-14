@@ -45,8 +45,8 @@ XF86AudioMute
 ## Window Management
 
 # quit/restart bspwm
-super + shift + {q,r}
-    bspc {quit,wm -r}
+super + shift + r
+    bspc wm -r
 
 super + Tab
     bspc node -t {floating,tiled}
