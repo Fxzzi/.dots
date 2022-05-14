@@ -17,7 +17,6 @@ chrony
 colorpicker
 discord-canary
 edk2-ovmf
-efibootmgr
 epson-inkjet-printer-escpr2
 exa
 font-manager
@@ -25,6 +24,7 @@ gamemode
 glow
 gnu-netcat
 hplip
+hw-probe
 i3-volume
 i3lock-fancy-multimonitor
 imwheel

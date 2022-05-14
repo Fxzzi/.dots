@@ -3,7 +3,7 @@
 xidlehook \
   --not-when-audio \
   --timer 600 \
-    '~/.scripts/lock.sh' \
+    '~/.local/scripts/lock.sh' \
     '' \
   --timer 300 \
     'systemctl suspend' \
