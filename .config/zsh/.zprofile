@@ -14,6 +14,5 @@ export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx $XDG_CONFIG_HOME/X11/xinitrc -- -keeptty >~/.local/share/xorg/Xorg.log 2>&1
+  exec startx "$XDG_CONFIG_HOME"/X11/xinitrc -- -keeptty >~/.local/share/xorg/Xorg.log 2>&1
 fi
-

@@ -2,7 +2,7 @@
 # Author: https://github.com/AlphaTechnolog
 # Adapted by: https://github.com/Fxzzi
 user="${USER}"
-shell="$(basename ${SHELL})"
+shell="$(basename "${SHELL}")"
 distro=$(. /etc/os-release ; echo "$ID")
 wm="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
 kernel="$(uname -r | cut -d '-' -f1)"
@@ -23,7 +23,7 @@ len () {
 repeat_by_len () {
   local str=$1
   local char=$2
-  local len=$(len $str)
+  local len=$(len "$str")
   local i=1
 
   while [[ $i -lt $len ]]; do
@@ -42,3 +42,4 @@ ${bold}${blue}  ████▀  ▀████      ${end}${bold}${purple} 
 ${bold}${blue} ████▀    ▀████     ${end}${bold}${purple}  ${blue}pk${green} ${magenta} ${cyan}${packages}${end}
 ${bold}${blue}▀▀▀          ▀▀▀    
 "
+

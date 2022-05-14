@@ -64,22 +64,18 @@ ignore_dbusclose = true
 [urgency_low]
 background = "#1E1E2E"
 foreground = "#D9E0EE"
-timeout = 4
+timeout = 6
 
 [urgency_normal]
 background = "#1E1E2E"
 foreground = "#D9E0EE"
-timeout = 6
+timeout = 8
 
 [urgency_critical]
 background = "#1E1E2E"
 foreground = "#D9E0EE"  
 frame_color = "#F8BD96"
-timeout = 8
-
-[fullscreen_show_critical]
-msg_urgency = critical
-fullscreen = pushback
+timeout = 10
 
 [screenshot]
 appname = "screenshot"

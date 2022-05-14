@@ -9,4 +9,4 @@
 #i3lock -u -i $TMPBG
 #rm /tmp/screen.png
 
-i3lock-fancy-multimonitor -n -p  
+i3lock-fancy-multimonitor -n -p
