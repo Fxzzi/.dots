@@ -30,7 +30,10 @@ case $1 in
     ;;
 esac
 
-if [[ -e $tmpImage ]]; then
+# check file size (if the screenshot was cancelled)
+tmpImageSize=$(wc -c <"$tmpImage")
+
+if [ $tmpImageSize != 0 ]; then
         dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
         sharenix -c -q "$tmpImage" | xclip -i -sel cl
         exit $?

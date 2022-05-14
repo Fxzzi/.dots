@@ -24,5 +24,6 @@
     ~/.local/scripts: scripts
     ~/.local/share/fonts: fonts
     ~/.imwheelrc: .imwheelrc
+    ~/.zshenv: .zshenv
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
