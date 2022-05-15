@@ -9,7 +9,7 @@ configuration{
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
-    display-drun: "   Apps ";
+    display-drun: "  Apps ";
     sidebar-mode: false;
 }
 
@@ -35,14 +35,14 @@ inputbar {
     children: [prompt,entry];
     background-color: @bg-col;
     border-radius: 5px;
-    padding: 2px;
+    padding: 5px;
 }
 
 prompt {
     background-color: @blue;
     padding: 6px;
     text-color: @bg-col;
-    border-radius: 3px;
+    border-radius: 4px;
     margin: 20px 0px 0px 20px;
 }
 
