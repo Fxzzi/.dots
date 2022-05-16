@@ -26,7 +26,7 @@ super + shift + e
     ~/.config/rofi/powermenu.sh
 
 super + b	
-    librewolf
+    env LIBVA_DRIVER_NAME=nvidia MOZ_DISABLE_RDD_SANDBOX=1 EGL_PLATFORM=x11 librewolf
 
 super + f
     thunar

@@ -150,14 +150,14 @@ low_battery_color="red"
 
 [mount_filter]
 is_list_ignored = true
-list = ["/mnt/.*", "/home", "/tmp", "/run/timeshift/.*", "/var"]
+list = ["/var/cache/pacman/pkg", "/var/log", "/mnt", "/run/timeshift/backup", "/home"]
 regex = true
 case_sensitive = false
 whole_word = false
 
 [temp_filter]
 is_list_ignored = true
-list = ["nvme: Sensor 1", "nvme: Sensor 2"]
+list = ["nct", "nvme: Sensor 2", "nvme: Composite"]
 regex = false
 case_sensitive = false
 whole_word = false

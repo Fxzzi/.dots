@@ -14,7 +14,6 @@ bspc monitor DP-2 -d 2 4 6 8 10
 
 bspc config border_width        		3
 bspc config window_gap          		12
-bspc config border_radius 			6
 bspc config normal_border_color			"#1E1E2E"
 bspc config active_border_color			"#1E1E2E"
 bspc config focused_border_color		"#575268"
