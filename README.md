@@ -20,12 +20,14 @@ This will create symlinks and overwrite files. It will also install all packages
 ## 🖥️ Wallpapers
 These wallpapers were made with the work of [Catppuccin Factory!](https://github.com/FaarisAnsari/catppuccin-factory "catFactory on GitHub")
 
-## 
+[walls folder](https://github.com/Fxzzi/.dots/tree/main/walls "walls folder") 
 
 <details>
   <summary>👨‍💻 Dependencies</summary>
   
 [bspwm](https://github.com/baskerville/bspwm "bspwm on GitHub")
+
+[sxhkd](https://github.com/baskerville/sxhkd "sxhkd on GitHub")
 
 [Kitty](https://github.com/kovidgoyal/kitty "Kitty on GitHub")
 
@@ -33,7 +35,7 @@ These wallpapers were made with the work of [Catppuccin Factory!](https://github
 
 [Polybar](https://github.com/polybar/polybar)
 
-[picom-arian8j2](https://github.com/Arian8j2/picom-jonaburg-fix "Arian8j2's fork of Picom on GitHub")
+[picom-arian8j2](https://github.com/Arian8j2/picom "Arian8j2's fork of Picom on GitHub")
 
 [rofi](https://github.com/davatorium/rofi "rofi on GitHub")
 
@@ -44,16 +46,15 @@ These wallpapers were made with the work of [Catppuccin Factory!](https://github
 [Dunst](https://github.com/dunst-project/dunst "Dunst on GitHub")
 
 [i3-volume](https://github.com/hastinbe/i3-volume "i3-volume on GitHub")
+
+[zsh](https://www.zsh.org/ "zsh")
+
 </details>
 
 <details>
   <summary>👩‍💻 Other Useful Tidbits</summary>
   
-[zsh](https://www.zsh.org/ "zsh")
-
 [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh "OhMyZsh on GitHub")
-
-[Starship Prompt](https://github.com/starship/starship "Starship on github")
 
 [rsClock](https://github.com/valebes/rsClock "rsClock on GitHub")
 
