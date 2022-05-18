@@ -1,16 +1,7 @@
 #! /bin/sh
 pgrep -x sxhkd > /dev/null || sxhkd & 
 
-picom -b --experimental-backends &
-imwheel -k -b 45 &
-nitrogen --restore &
-for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done &
-nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings --load-config-only &
-$HOME/.config/polybar/launch.sh &
-xset r rate 375 45 &
-
-bspc monitor DP-4 -d 1 3 5 7 9
-bspc monitor DP-2 -d 2 4 6 8 10
+python $HOME/.config/bspwm/workspaces.py &
 
 bspc config border_width        		3
 bspc config window_gap          		12
@@ -18,11 +9,15 @@ bspc config normal_border_color			"#1E1E2E"
 bspc config active_border_color			"#1E1E2E"
 bspc config focused_border_color		"#575268"
 bspc config presel_feedback_color		"#89DCEB"
-bspc config pointer_motion_interval 		5.8823529411765ms
+bspc config pointer_motion_interval 		6
+#bspc config pointer_motion_interval 		40
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      false
+bspc config split_ratio 0.50
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+bspc config focus_follows_pointer false
+bspc config top_padding 43
+bspc config remove_unplugged_monitors true
 
 [ "$1" = 0 ] && {
 	discord-canary --start-minimized --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy &
@@ -30,3 +25,11 @@ bspc config gapless_monocle      false
 	$HOME/.local/scripts/xidlehook.sh &
 	/usr/bin/openrgb -p blue.orp &
 }
+
+picom -b --experimental-backends &
+imwheel -k -b 45 &
+nitrogen --restore &
+for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, >
+nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings --load-config-only &
+$HOME/.config/polybar/launch.sh &
+xset r rate 375 45 &

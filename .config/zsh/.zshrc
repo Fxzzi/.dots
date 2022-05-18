@@ -106,6 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:~/.local/scripts
+export PATH=$PATH:~/.local/scripts:~/.local/bin
 source $HOME/.config/zsh/.aliases
 $HOME/.local/scripts/fetch.sh

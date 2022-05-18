@@ -19,7 +19,6 @@ discord-canary
 edk2-ovmf
 epson-inkjet-printer-escpr2
 exa
-font-manager
 gamemode
 glow
 gnu-netcat
@@ -57,7 +56,7 @@ pacman-contrib
 papirus-icon-theme
 paru
 pavucontrol
-picom-arian8j2-git
+picom-jonaburg-git
 pipes.sh
 pkgconf
 polybar
@@ -71,7 +70,7 @@ sbctl
 sharenix-git
 shotwell
 spicetify-themes-git
-spotify-adblock-git
+spotify
 steam
 systemd-boot-pacman-hook
 tealdeer
