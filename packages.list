@@ -23,6 +23,7 @@ font-manager
 gamemode
 glow
 gnu-netcat
+hardcode-tray
 hplip
 hw-probe
 i3-volume
@@ -52,13 +53,13 @@ nvtop
 obs-nvfbc-git
 openrgb-bin
 os-prober
-p7zip
 pacman-contrib
 papirus-icon-theme
 paru
 pavucontrol
 picom-arian8j2-git
 pipes.sh
+pkgconf
 polybar
 polymc-bin
 pulseaudio-control
@@ -69,14 +70,13 @@ rofi
 sbctl
 sharenix-git
 shotwell
+spicetify-themes-git
 spotify-adblock-git
 steam
 systemd-boot-pacman-hook
 tealdeer
 timeshift
 topgrade
-unrar
-unzip
 ventoy-bin
 vulkan-tools
 whoogle-git
@@ -120,7 +120,6 @@ xorg-xwd
 xorg-xwud
 yuzu-mainline-bin
 zenmonitor3-git
-zip
 zpaq
 zsh-autosuggestions
 zsh-syntax-highlighting
