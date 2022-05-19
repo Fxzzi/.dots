@@ -3,6 +3,14 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 python $HOME/.config/bspwm/workspaces.py &
 
+picom -b --experimental-backends &
+imwheel -k -b 45 &
+nitrogen --restore &
+for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done &
+nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings --load-config-only &
+$HOME/.config/polybar/launch.sh &
+xset r rate 375 45 &
+
 bspc config border_width        		3
 bspc config window_gap          		12
 bspc config normal_border_color			"#1E1E2E"
@@ -25,11 +33,3 @@ bspc config remove_unplugged_monitors true
 	$HOME/.local/scripts/xidlehook.sh &
 	/usr/bin/openrgb -p blue.orp &
 }
-
-picom -b --experimental-backends &
-imwheel -k -b 45 &
-nitrogen --restore &
-for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, >
-nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings --load-config-only &
-$HOME/.config/polybar/launch.sh &
-xset r rate 375 45 &
