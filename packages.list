@@ -19,10 +19,10 @@ discord-canary
 edk2-ovmf
 epson-inkjet-printer-escpr2
 exa
+firefox
 gamemode
 glow
 gnu-netcat
-hardcode-tray
 hplip
 hw-probe
 i3-volume
@@ -44,6 +44,7 @@ nano
 neofetch
 neovim
 nerd-fonts-jetbrains-mono
+noise-suppression-for-voice
 noisetorch
 notepadqq
 nvidia
@@ -69,7 +70,7 @@ rofi
 sbctl
 sharenix-git
 shotwell
-spicetify-themes-git
+spicetify-cli
 spotify
 steam
 systemd-boot-pacman-hook
