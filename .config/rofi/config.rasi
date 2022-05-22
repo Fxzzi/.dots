@@ -1,6 +1,6 @@
 configuration{
     modi: "drun";
-    lines: 5;
+    lines: 10;
     font: "JetBrainsMono Nerd Font 13";
     show-icons: true;
     icon-theme: "Papirus-Dark";
