@@ -23,3 +23,7 @@ alias polybarrc="nano $HOME/.config/polybar/config.ini"
 
 alias updates="checkupdates && paru -Qum"
 alias ix="curl -F 'f:1=<-' ix.io | xclip -sel clip"
+
+alias sudo='sudo '
+
+alias "remorphans"="pacman -Qtdq | doas pacman -Rns -"

@@ -44,5 +44,7 @@ eval $(/usr/bin/gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
 
 $HOME/.local/scripts/res.sh
+
 xsetroot -cursor_name left_ptr
+
 exec bspwm 

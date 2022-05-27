@@ -90,14 +90,7 @@ summary = "*"
 set_stack_tag = "spotify"
 format = "<b>Now Playing </b>%s\n%b"
 
-[notify_send]
-appname = notify-send
-new_icon = bell
-
-[librewolf]
-appname = librewolf
-new_icon = librewolf
-
 [volume]
 summary = "Volume *"
 format = "<b>Volume</b>\n%n%%"
+timeout = 3
