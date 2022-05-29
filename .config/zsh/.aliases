@@ -1,4 +1,3 @@
-alias open='xdg-open'
 alias rm='rm -rIv'
 alias cp='cp -rv'
 alias mv='mv -v'
@@ -24,8 +23,6 @@ alias zshrc="nano $HOME/.config/zsh/.zshrc"
 alias xinitrc="nano $HOME/.config/X11/xinitrc"
 
 alias updates="checkupdates||paru -Qum"
-alias ix="curl -F 'f:1=<-' ix.io | xclip -sel clip"
-
-alias sudo='sudo '
+alias ix="curl -F 'f:1=<-' ix.io"
 
 alias "remorphans"="pacman -Qtdq | doas pacman -Rns -"

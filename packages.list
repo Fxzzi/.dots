@@ -45,13 +45,15 @@ nitrogen
 noise-suppression-for-voice
 notepadqq
 nvidia-dkms
+nvidia-modprobe-service
 nvidia-vaapi-driver-git
 nvtop
 obs-nvfbc-git
 opendoas
 openrgb-bin
+opentabletdriver-git
 pacman-contrib
-papirus-icon-theme
+papirus-icon-theme-stripped
 paru
 pavucontrol
 picom-arian8j2-git
@@ -103,7 +105,7 @@ xorg-xsetroot
 xorg-xvinfo
 xorg-xwd
 xorg-xwud
-yuzu-mainline-bin
+yuzu-early-access
 zenmonitor3-git
 zpaq
 zramd
