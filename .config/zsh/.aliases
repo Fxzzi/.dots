@@ -10,7 +10,6 @@ alias la='exa --icons -a --group-directories-first'
 alias ll='exa --icons -lah --group-directories-first'
 alias ls='exa --icons --group-directories-first'
 alias tree='exa --icons --tree'
-alias dotpush='$HOME/.local/scripts/push.sh'
 
 alias bsrc="nano $HOME/.config/bspwm/bspwmrc"
 alias sxrc="nano $HOME/.config/sxhkd/sxhkdrc"
@@ -22,7 +21,7 @@ alias polybarrc="nano $HOME/.config/polybar/config.ini"
 alias zshrc="nano $HOME/.config/zsh/.zshrc"
 alias xinitrc="nano $HOME/.config/X11/xinitrc"
 
-alias updates="checkupdates||paru -Qum"
+alias updates="checkupdates; paru -Qum"
 alias ix="curl -F 'f:1=<-' ix.io"
 
-alias "remorphans"="pacman -Qtdq | doas pacman -Rns -"
+alias "remorphans"="paru -Qtdq | paru -Rns -"
