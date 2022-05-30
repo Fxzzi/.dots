@@ -33,3 +33,5 @@ bspc config remove_unplugged_monitors true
 	$HOME/.local/scripts/xidlehook.sh &
 	/usr/bin/openrgb -p blue.orp &
 }
+
+bspc rule -a cuphead.exe state=fullscreen
