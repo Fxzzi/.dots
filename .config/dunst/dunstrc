@@ -64,7 +64,7 @@ ignore_dbusclose = true
 [urgency_low]
 background = "#1E1E2E"
 foreground = "#D9E0EE"
-timeout = 6
+timeout = 4
 
 [urgency_normal]
 background = "#1E1E2E"
@@ -93,4 +93,3 @@ format = "<b>Now Playing </b>%s\n%b"
 [volume]
 summary = "Volume *"
 format = "<b>Volume</b>\n%n%%"
-timeout = 3

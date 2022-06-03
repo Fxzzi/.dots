@@ -58,6 +58,6 @@ These wallpapers were made with the work of [Catppuccin Factory!](https://github
 
 [rsClock](https://github.com/valebes/rsClock "rsClock on GitHub")
 
-[Librewolf](https://librewolf.net/ "librewolf")
+[Firefox](https://www.mozilla.org/en-GB/firefox/new/ "firefox")
 
 </details>

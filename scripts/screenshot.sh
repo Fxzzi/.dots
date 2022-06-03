@@ -19,7 +19,7 @@ case $1 in
     ;;
 # Takes screenshot of rectangle selection
   --selection)
-    maim -suB "$tmpImage"
+    maim -suB -m 6 "$tmpImage"
     ;;
 # Takes screenshot of active window
   --active)

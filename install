@@ -33,23 +33,3 @@ do
                   ;;
       esac      
 done
-
-while true
-do
-      read -r -p "Do you want to install all packages from packages.list? [Y/n] " input
- 
-      case $input in
-            [yY][eE][sS]|[yY])
-                  echo Installing!
-                  paru -Syu --needed --noconfirm - < ${BASEDIR}/packages.list
-                  break
-                  ;;
-            [nN][oO]|[nN])
-                  echo "Okay!"
-                  break
-                  ;;
-            *)
-                  echo "Invalid input..."
-                  ;;
-      esac
-done
