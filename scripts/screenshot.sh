@@ -11,19 +11,19 @@ tmpImage="$tmpImage.png"
 case $1 in
 # Takes screenshot of primary monitor
   --monitor1)
-    maim -uB -g 2560x1440+1920+0 "$tmpImage"
+    maim -uB -m 3 -g 2560x1440+1920+0 "$tmpImage"
     ;;
 # Takes screenshot of secondary monitor
   --monitor2)
-    maim -uB -g 1920x1080+0+180 "$tmpImage"
+    maim -uB -m 3 -g 1920x1080+0+0 "$tmpImage"
     ;;
 # Takes screenshot of rectangle selection
   --selection)
-    maim -suB -m 6 "$tmpImage"
+    maim -suB -m 3 "$tmpImage"
     ;;
 # Takes screenshot of active window
   --active)
-    maim -uB --window $(xdotool getactivewindow) "$tmpImage"
+    maim -uB -m 3 --window $(xdotool getactivewindow) "$tmpImage"
     ;;
   *)
     echo 'wrong or missing argument'

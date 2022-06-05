@@ -22,6 +22,6 @@ alias zshrc="nano $HOME/.config/zsh/.zshrc"
 alias xinitrc="nano $HOME/.config/X11/xinitrc"
 
 alias updates="checkupdates; paru -Qum"
-alias ix="curl -F 'f:1=<-' ix.io"
+alias rs="curl --data-binary @- https://paste.rs | xclip -selection clipboard"
 
 alias "remorphans"="paru -Qtdq | paru -Rns -"
