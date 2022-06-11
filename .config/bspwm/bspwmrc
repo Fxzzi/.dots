@@ -24,6 +24,7 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc config focus_follows_pointer false
 bspc config pointer_follows_monitor true 
+bspc config click_to_focus any 
 bspc config remove_unplugged_monitors true
 
 [ "$1" = 0 ] && {
